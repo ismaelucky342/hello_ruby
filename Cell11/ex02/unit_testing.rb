@@ -11,38 +11,45 @@
 #                                                                          |  $$$$$$/
 #                                                                           \______/ 
 #                                     Ismael Hernandez - ismherna@student.42madrid.com 
+require 'test/unit'
 
-puts "* Hashes are associative arrays with a unique set of keys, each corresponding to a value"
-a = {:lang => 'Ruby', :framework => 'Rails'}
-puts "a = #{a}"
-
-puts "\n* Access a value through its key with []"
-puts "a[:lang] == #{a[:lang].inspect}"
-puts "a[:perl] == #{a[:perl].inspect}"
-
-puts "\n* Change a value with []="
-a[:lang] = 'Java'
-puts "a[:lang] = 'Java'"
-puts "a == #{a}"
-
-puts "\n* Iterate over keys and values with each do |key, value| ... end"
-a.each do |key, value|
-  puts "#{key}: #{value}"
-end
-
-puts "\n* You can merge two arrays"
-b = {:name => "Peter", :framework => "Sinatra"}
-puts "b = #{b}"
-puts "a.merge(b) == #{a.merge(b)}"
-
-puts "\n* Just like Array, Hash implements the Enumerable module with useful methods like: all?, any?, select, reject, sort"
-
-puts "\n* You can use a hash argument to emulate named method arguments"
-
-def my_method(options = {})
-  options.each do |key, value|
-    puts "#{key}: #{value}"
+class Person
+  attr_accessor :name, :age
+  
+  def initialize(name, age)
+    self.name = name
+    self.age = age
+  end
+  
+  def old?
+    age > 40
   end
 end
 
-my_method :apples => "Golden Delicious", :bananas => "Chiquita"
+class PersonTest < Test::Unit::TestCase
+  def setup
+    @person = Person.new("Joe", 43)
+  end
+  
+  def teardown
+    # Nothing to tear down in this case
+  end
+  
+  def test_name
+    assert_equal "Joe", @person.name
+    @person.name = "Peter"
+    assert_equal "Peter", @person.name
+  end
+
+  def test_age
+    assert_equal 43, @person.age
+    @person.age = 15
+    assert_equal 15, @person.age
+  end
+  
+  def test_old
+    assert @person.old?
+    @person.age = 39
+    assert !@person.old?
+  end
+end

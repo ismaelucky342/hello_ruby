@@ -1,3 +1,17 @@
+# 
+# /$$   /$$           /$$ /$$                 /$$$$$$$            /$$                
+# | $$  | $$          | $$| $$                | $$__  $$          | $$                
+# | $$  | $$  /$$$$$$ | $$| $$  /$$$$$$       | $$  \ $$ /$$   /$$| $$$$$$$  /$$   /$$
+# | $$$$$$$$ /$$__  $$| $$| $$ /$$__  $$      | $$$$$$$/| $$  | $$| $$__  $$| $$  | $$
+# | $$__  $$| $$$$$$$$| $$| $$| $$  \ $$      | $$__  $$| $$  | $$| $$  \ $$| $$  | $$
+# | $$  | $$| $$_____/| $$| $$| $$  | $$      | $$  \ $$| $$  | $$| $$  | $$| $$  | $$
+# | $$  | $$|  $$$$$$$| $$| $$|  $$$$$$/      | $$  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$$
+# |__/  |__/ \_______/|__/|__/ \______//$$$$$$|__/  |__/ \______/ |_______/  \____  $$
+#                                     |______/                               /$$  | $$
+#                                                                          |  $$$$$$/
+#                                                                           \______/ 
+#                                     Ismael Hernandez - ismherna@student.42madrid.com 
+
 class MyClass  
   # Methods are public by default
 
@@ -9,19 +23,13 @@ class MyClass
 
   protected  
 
-  # Protected methods can be invoked by *any* instance of the same class or a
-  # subclass of MyClass. So one object can invoke a protected method on another
-  # object if they have a common super class. Protected methods can have an
-  # explicit receiver.
-  def protected_method
+    def protected_method
     puts "protected_method invoked"
   end
 
   private
 
-  # Private methods can only be invoked within an instance of MyClass or a subclass
-  # of MyClass. The receiver of a private method is always self. Private methods
-  # can not have an explicit receiver.
+ 
   def private_method
     puts "private_method invoked"
   end

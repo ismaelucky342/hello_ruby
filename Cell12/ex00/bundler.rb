@@ -1,8 +1,19 @@
-# Here is a sample Gemfile that specifies library dependencies for a Ruby on Rails
-# application:
+# 
+# /$$   /$$           /$$ /$$                 /$$$$$$$            /$$                
+# | $$  | $$          | $$| $$                | $$__  $$          | $$                
+# | $$  | $$  /$$$$$$ | $$| $$  /$$$$$$       | $$  \ $$ /$$   /$$| $$$$$$$  /$$   /$$
+# | $$$$$$$$ /$$__  $$| $$| $$ /$$__  $$      | $$$$$$$/| $$  | $$| $$__  $$| $$  | $$
+# | $$__  $$| $$$$$$$$| $$| $$| $$  \ $$      | $$__  $$| $$  | $$| $$  \ $$| $$  | $$
+# | $$  | $$| $$_____/| $$| $$| $$  | $$      | $$  \ $$| $$  | $$| $$  | $$| $$  | $$
+# | $$  | $$|  $$$$$$$| $$| $$|  $$$$$$/      | $$  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$$
+# |__/  |__/ \_______/|__/|__/ \______//$$$$$$|__/  |__/ \______/ |_______/  \____  $$
+#                                     |______/                               /$$  | $$
+#                                                                          |  $$$$$$/
+#                                                                           \______/ 
+#                                     Ismael Hernandez - ismherna@student.42madrid.com 
 
 unless $0 == __FILE__
-  # This code goes in Gemfile in the root of yoru project
+
   source 'http://rubygems.org'
 
   gem 'rake', '~> 0.9'
@@ -12,7 +23,7 @@ unless $0 == __FILE__
 
   gem 'delayed_job', '2.1.4'
 
-  gem 'dalli' # Memcache (http://devcenter.heroku.com/articles/memcache)
+  gem 'dalli' 
 
   gem 'aws', '~> 2.5'
 

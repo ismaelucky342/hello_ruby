@@ -1,7 +1,17 @@
-# Adds the current directory to the Ruby load path
-# The reason we do this here is so that we Ruby will find the Person
-# class when we require it. You can invoke ruby on the command line with the I option
-# to add directories to the load path.
+# 
+# /$$   /$$           /$$ /$$                 /$$$$$$$            /$$                
+# | $$  | $$          | $$| $$                | $$__  $$          | $$                
+# | $$  | $$  /$$$$$$ | $$| $$  /$$$$$$       | $$  \ $$ /$$   /$$| $$$$$$$  /$$   /$$
+# | $$$$$$$$ /$$__  $$| $$| $$ /$$__  $$      | $$$$$$$/| $$  | $$| $$__  $$| $$  | $$
+# | $$__  $$| $$$$$$$$| $$| $$| $$  \ $$      | $$__  $$| $$  | $$| $$  \ $$| $$  | $$
+# | $$  | $$| $$_____/| $$| $$| $$  | $$      | $$  \ $$| $$  | $$| $$  | $$| $$  | $$
+# | $$  | $$|  $$$$$$$| $$| $$|  $$$$$$/      | $$  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$$
+# |__/  |__/ \_______/|__/|__/ \______//$$$$$$|__/  |__/ \______/ |_______/  \____  $$
+#                                     |______/                               /$$  | $$
+#                                                                          |  $$$$$$/
+#                                                                           \______/ 
+#                                     Ismael Hernandez - ismherna@student.42madrid.com 
+
 $:.unshift(File.dirname(__FILE__) + '/../07_classes_and_objects')
 
 # Makes sure a class is required automatically whenever it is used.

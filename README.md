@@ -1,8 +1,7 @@
 # hello_ruby
-<div style="text-align: center;">
-  <img src="https://github.com/ismaelucky342/hello_ruby/assets/153450550/8ee82f41-dc19-4f46-9467-2d771f753f69" alt="Descripción de la imagen" width="200"/>
+<div align="center">
+  <img src="https://github.com/ismaelucky342/hello_ruby/assets/153450550/8ee82f41-dc19-4f46-9467-2d771f753f69" alt="Descripción de la imagen" width="200">
 </div>
-
 Ruby is an interpreted, high-level, object-oriented programming language. Its clean syntax makes programming easier and more productive. In my case the use of this language will be reserved for the moment for the creation of School-42 testers and some other personal projects
 
 ### Structure
